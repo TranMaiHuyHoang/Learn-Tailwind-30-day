@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Layout</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="min-h-screen  flex flex-col">
+
+        <header class="bg-yellow-500 py-5  px-3 flex gap-5 text-white">
+            <span class="text-[20px] font-semibold">Cellphone Store</span>
+
+            <select class="p-3 bg-pink-300 rounded-[10px] w-[200px]">
+                <option>Danh mục</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <input type="text" placeholder="Tìm kiếm" class="p-3 bg-white text-gray-500 w-[400px] rounded-[10px]">
+            <button class="p-3 bg-blue-300 rounded-[10px] min-w-[120px]">Giỏ hàng</button>
+            <button class="p-3 bg-green-300 rounded-[10px] min-w-[120px]">Đăng nhập</button>
+        </header>
+
+        <main class="bg-yellow-100 w-7xl mx-auto ">
+            <div class="flex flex-col p-5 gap-3">
+
+                <div class="flex flex-col gap-2 " >
+                    <label class=" font-medium text-gray-600"> Email </label>
+                    <input type="text" placeholder=" Nhập email của bạn " class="w-[300px] p-1 bg-white border border-gray-400 rounded-xl ">
+                </div>
+
+                <div class="flex flex-col gap-2 ">
+                    <label class=" font-medium text-gray-600"> Số điện Thoại </label>
+                    <input type="text" placeholder=" Nhập số điện thoại của bạn " class="w-[300px] p-1 bg-white border border-gray-400 rounded-xl">
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2">
+                    <input type="checkbox" class="w-3 h-3 rounded text-red-600">
+                    <label class="text-red-600">Tôi đồng ý với điều khoản của CellphoneS</label>
+                </div>
+
+                <button class=" w-[300px] p-2 bg-red-500 text-white font-bold rounded-xl"> Đăng Ký Ngay Tại Đây </button>
+            </div>
+        </main>
+
+        <!-- <main class="flex-1 p-6">
+            Body Content
+        </main> -->
+
+        <!-- <footer class="h-14 bg-gray-800 text-white flex items-center justify-center">
+            Footer
+        </footer> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Layout</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body class="min-h-screen flex flex-col overflow-x-hidden bg-[#f4f5f4]">
+        <header>
+            <div class="bg-[#003E72] flex justify-between items-center px-5 py-2">
+                <img src="../img/logo 1.png" class="w-[140px] h-[50px]" alt="" />
+                <div class="flex gap-2 bg-white/10 px-5 py-2 rounded-full">
+                    <img
+                        src="../img/Spiderman.avif"
+                        class="h-[24px] w-[24px] rounded-full"
+                        alt=""
+                    />
+                    <span class="text-[#FFFFFF] text-[14px]">長方形</span>
+                </div>
+            </div>
+        </header>
+
+        <header class="py-3 bg-white">
+            <!-- Hộp lớn-->
+            <div class="w-[1440px] h-[136px]">
+                <div class="flex flex-col gap-2 max-w-5xl mx-auto py-5">
+                    <span class="text-[14px] font-normal text-[#2E3A3C] w-[154px] h-[21px]"
+                        >プロジェクト管理に戻る</span
+                    >
+                    <span class="text-[24px] font-extrabold text-[#2E3A3C] w-[96px] h-[36px]"
+                        >認証設定</span
+                    >
+                    <span class="text-[14px] font-normal text-[#2E3A3C] w-[1000px] h-[20px]"
+                        >外部システムと連携し、より便利にオクトンを使うことができます。</span
+                    >
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 bg-gray-100 p-5">
+            <div class="flex gap-4 max-w-5xl mx-auto py-5 px-15">
+                <!-- Hộp bên trái-->
+                <div class="flex flex-col gap-3">
+                    <!-- Hộp nhỏ 1 bên trái-->
+                    <div
+                        class="flex items-center gap-3 justify-between w-[264px] h-[56px] px-4 bg-white rounded-lg"
+                    >
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../img/Anh1png.png"
+                                class="w-[28px] h-[28px] rounded-lg"
+                                alt=""
+                            />
+                            <span class="text-[14px] font-bold text-[#2E3A3C]">Lark Drive API</span>
+                        </div>
+                        <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                    </div>
+                    <!-- Hộp nhỏ  2 bên trái-->
+                    <div
+                        class="flex items-center gap-3 justify-between w-[264px] h-[56px] px-2 bg-white rounded-lg"
+                    >
+                        <div class="flex items-center gap-3">
+                            <img src="../img/anh2.png" class="w-[28px] h-[28px]" alt="" />
+                            <span class="text-[14px] font-bold">Google Drive API</span>
+                        </div>
+
+                        <div class="bg-gray-300 rounded-lg border-[#2E3A3C] px-2 rounded-[11px]">
+                            <span class="text-[12px] text-white">未認証</span>
+                        </div>
+                    </div>
+                    <!-- Hộp nhỏ 3 bên trái-->
+                    <div
+                        class="flex items-center gap-3 justify-between min-w-[264px] h-[56px] px-2 bg-white rounded-lg"
+                    >
+                        <div class="flex items-center gap-3">
+                            <img src="../img/anh3.png" class="w-[28px] h-[28px]" alt="" />
+                            <span class="text-[14px] font-bold">Google Sheets API </span>
+                        </div>
+                        <div class="bg-gray-300 rounded-lg border-[#2E3A3C] px-2 rounded-[11px]">
+                            <span class="text-[12px] text-white">未認証</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hộp bên phải-->
+                <div class="w-[480px] bg-white rounded-xl p-6 w-[792px] h-[540px]">
+                    <div class="flex flex-col gap-5 max-w-5xl mx-auto">
+                        <h3 class="text-[20px] font-extrabold text-[#2E3A3C]">
+                            認証ステータス｜Lark Drive API
+                        </h3>
+
+                        <div
+                            class="flex flex-col gap-2 mb-8 bg-gray-100 rounded-lg w-[744px] h-[110px] p-4"
+                        >
+                            <div class="flex gap-2">
+                                <div class="w-[20px] h-[20px] rounded-full bg-green-500"></div>
+                                <span class="text-[14px] font-bold text-[]">認証済</span>
+                            </div>
+
+                            <span class="text-[14px] font-normal"
+                                >認証情報：cli_a87f73**********</span
+                            >
+                            <span class="text-[14px] font-normal"
+                                >最終更新：2025-11-11 12:52:50</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 max-w-5xl mx-auto">
+                        <h3 class="text-[20px] font-extrabold text-[#2E3A3C]">認証情報詳細</h3>
+                        <div
+                            class="flex flex-col justify-between bg-gray-100 rounded-lg w-[744px] h-[180px] p-4"
+                        >
+                            <div class="flex gap-40 text-[14px] font-normal">
+                                <span>App ID</span>
+                                <span>cli_a87f73**********</span>
+                            </div>
+
+                            <div class="flex gap-33 text-[14px] font-normal">
+                                <span>App Secret</span>
+                                <span>35****************************DX</span>
+                            </div>
+
+                            <div class="flex gap-24 text-[14px] font-normal">
+                                <span> リダイレクトURL</span>
+                                <span> https://app.octon-ai.com/lark/callback</span>
+                            </div>
+
+                            <div class="flex gap-16 text-[14px] font-normal">
+                                <span>管理者メールアドレス</span>
+                                <span>komugi6622@gmail.com</span>
+                            </div>
+
+                            <div class="flex gap-16 text-[14px] font-normal">
+                                <span>デフォルトフォルダID</span>
+                                <span>Qn2ifJtual8kC1deDfSjn3lEp5g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-gray-200 mt-5" />
+                    <div class="flex justify-end p-5">
+                        <button class="w-[120px] h-[48px] rounded-full bg-[#2E3A3C] text-white">
+                            グループ 78
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

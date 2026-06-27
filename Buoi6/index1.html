@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Layout</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body class="min-h-screen flex flex-col overflow-x-hidden bg-[#f4f5f4]">
+        <header>
+            <div class="bg-[#003E72] flex justify-between items-center px-5 py-2">
+                <img src="../img/logo 1.png" class="w-[140px] h-[50px]" alt="" />
+                <div class="flex gap-2 bg-white/10 px-5 py-2 rounded-full">
+                    <img
+                        src="../img/Spiderman.avif"
+                        class="h-[24px] w-[24px] rounded-full"
+                        alt=""
+                    />
+                    <span class="text-[#FFFFFF] text-[14px]">長方形</span>
+                </div>
+            </div>
+        </header>
+
+        <header class="py-5 bg-white">
+            <!-- Hộp lớn-->
+            <div class="max-w-5xl mx-auto flex justify-between items-center">
+                <!-- Hộp nhỏ 1-->
+                <div class="flex flex-col gap-2">
+                    <span class="font-bold text-[32px] text-[#2E3A3C]">プロジェクト管理</span>
+                    <span class="text-[14px] text-[#2E3A3C]"
+                        >書類回収プロジェクトを作成し、回収業務を効率化しましょう。</span
+                    >
+                </div>
+                <!-- Hộp nhỏ 2-->
+                <div class="flex flex-col gap-2">
+                    <span class="font-bold text-[22px] text-[#2E3A3C]">2026年1月1日(木)</span>
+                    <span class="text[14px] font-bold text-[#1A92F7]">オクトンの使い方のコツ</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 bg-gray-100 p-5">
+            <!-- Info Banner -->
+            <div class="flex max-w-5xl mx-auto gap-5 items-center">
+                <!-- Hộp nhỏ trái-->
+                <div
+                    class="bg-white flex px-3 h-[48px] rounded-[24px] flex-1 gap-3 flex items-center"
+                >
+                    <img src="../img/Spiderman.avif" class="size-9 rounded-full" alt="" />
+                    <span class="font-normal text-[16px] text-[#2E3A3C]"
+                        >🔔期限間近の案件があるプロジェクトが 2件
+                        あります！早めに確認しましょう。</span
+                    >
+                </div>
+
+                <!-- Hộp nhỏ phải-->
+                <button
+                    class="bg-[#1A92F7] h-[48px] px-5 md:w-[116px] text-white font-bold text-[16px] rounded-full"
+                >
+                    新規作成
+                </button>
+            </div>
+
+            <div class="p-5">
+                <!-- div card-->
+                <div
+                    class="bg-white w-[256px] h-[241px] rounded-[12px] flex flex-col gap-4 justify-center p-5"
+                >
+                    <h3 class="text-[18px] font-bold text-center">IT導入補助金</h3>
+                    <span class="text-[14px] font-normal">中小企業向けIT導入補助金のhh</span>
+                    <div class="flex justify-between">
+                        <!-- span trái-->
+                        <span class="text-[14px] text-[#2E3A3C] font-bold">期限間近 : 3件</span>
+                        <!-- span phải-->
+                        <span class="text-[14px] text-[#2E3A3C] font-normal">30分前</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button class="w-[74px] h-[40px] border border-gray-200 rounded-full">
+                            詳細
+                        </button>
+                        <button class="w-[132px] h-[40px] bg-[#2E3A3C] text-white rounded-full">
+                            管理画面
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="flex flex-col gap-5 p-10 bg-white">
+            <!-- Hộp lớn-->
+            <div class="max-w-5xl mx-auto flex justify-between items-center gap-5">
+                <!-- Hộp nhỏ 1-->
+                <div class="flex flex-col bg-[#39566F] w-[600px] px-20 py-2 rounded-xl relative">
+                    <img
+                        src="../img/Spiderman.avif"
+                        class="absolute bottom-15 left-2 w-[35px] h-[35px] rounded-2xl"
+                        alt=""
+                    />
+                    <span class="font-bold text-[24px] text-[#FFFFFF]">認証設定</span>
+                    <span class="font-light text-[16px] text-[#FFFFFF]"
+                        >Googleなどの外部システムと連携し</span
+                    >
+                    <span class="font-light text-[16px] text-[#FFFFFF]"
+                        >より便利にオクトンを使うことができます。
+                    </span>
+                </div>
+
+                <!-- Hộp nhỏ 2-->
+                <div class="flex flex-col bg-[#1A92F7] w-[600px] px-20 py-2 rounded-xl">
+                    <span class="font-bold text-[24px] text-[#FFFFFF]">オクトンの使い方のコツ</span>
+                    <span class="font-light text-[16px] text-[#FFFFFF]"
+                        >書類回収をスムーズに進めるための
+                    </span>
+                    <span class="font-light text-[16px] text-[#FFFFFF]"
+                        >オクトン活用のコツをまとめました。</span
+                    >
+                </div>
+            </div>
+            <div class="max-w-5xl mx-auto flex flex-col items-center gap-2">
+                <span class="font-light text-[14px] text-[#2E3A3C]"
+                    >はじめての使い方 / よくある質問 / お問い合わせ / プライバシーポリシー
+                </span>
+                <span class="font-light text-[12px] text-[#2E3A3C]"
+                    >© オクトン. All rights reserved.</span
+                >
+            </div>
+        </footer>
+    </body>
+</html>

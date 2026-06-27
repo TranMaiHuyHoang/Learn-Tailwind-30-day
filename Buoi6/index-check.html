@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プロジェクト管理 - 書類回収AI BOT オクトン</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap');
+
+      body {
+        font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="min-h-screen flex flex-col overflow-x-hidden bg-[#f4f5f4]">
+      <!-- Header -->
+      <header class="h-[64px] flex items-center px-5 bg-[#003e72]">
+        <div class="flex items-center justify-between w-full mx-auto">
+          <div>
+            <img src="./img/logo_1.png" alt="オクトン" class="w-[138px] h-[50px]" />
+          </div>
+          <button
+            class="flex items-center gap-2 bg-white/20 rounded-full px-4 h-[36px] w-[140px] hover:bg-white/30 transition-colors"
+          >
+            <img src="./img/user-default.png" alt="User" class="w-6 h-6 rounded-full" />
+            <span class="text-white text-[14px]">管理者A</span>
+            <i class="fas fa-chevron-down text-white text-xs"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1">
+        <!-- Info Banner -->
+        <div class="h-auto bg-white w-full">
+          <div
+            class="flex flex-col gap-4 md:gap-0 md:flex-row md:items-end md:justify-between max-w-6xl mx-auto w-full py-4 md:py-6 px-4 md:px-9"
+          >
+            <div class="flex-1 mb-0">
+              <h1 class="text-2xl md:text-[32px] font-extrabold mb-2 text-[#2e3a3c]">
+                プロジェクト管理
+              </h1>
+              <p class="text-[13px] md:text-[14px] text-[#2e3a3c] leading-relaxed">
+                書類回収プロジェクトを作成し、回収書類を効率化しましょう。
+              </p>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-2 w-full md:w-auto">
+              <div class="text-lg md:text-[22px] font-bold mt-0 text-[#2e3a3c]">
+                2026年1月1日(水)
+              </div>
+              <div class="flex gap-2 md:gap-4 text-xs md:text-[14px] font-bold flex-wrap">
+                <a href="#" class="text-[#1A92F7] hover:underline">操作ガイド</a>
+                <span class="text-gray-400">/</span>
+                <a href="#" class="text-[#1A92F7] hover:underline">オクトンの使い方のコツ</a>
+                <span class="text-gray-400">/</span>
+                <a href="#" class="text-[#1A92F7] hover:underline">困ったときはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="max-w-6xl mx-auto w-full py-4 px-5 md:px-9">
+          <div
+            class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 md:gap-0 mb-12 md:mb-16 px-0 py-4 md:py-3"
+          >
+            <div
+              class="flex items-center gap-3 bg-white rounded-lg md:rounded-full p-6 md:p-2 flex-1"
+            >
+              <img
+                src="./img/noti-avatar.png"
+                alt="Notification Avatar"
+                class="w-[36px] h-[36px]"
+              />
+              <p class="text-[14px] text-[#2e3a3c] leading-relaxed">
+                🔔期間限定の案件がある プロジェクトが
+                <span class="text-red-500 font-bold">2件</span>
+                あります！早めに確認しましょう。
+              </p>
+            </div>
+            <button
+              class="flex items-center justify-center gap-2 rounded-full px-2 h-[48px] w-auto md:w-[116px] text-white text-[16px] font-bold hover:bg-blue-600 transition-colors bg-[#1a92f7] flex-shrink-0 md:ml-4"
+            >
+              <i class="fas fa-plus"></i>
+              新規作成
+            </button>
+          </div>
+
+          <!-- Project Cards Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-20">
+            <!-- Card 1: IT導入補助金 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="入社書類回収"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    【入事】入社書類回収
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    新入社員が入社する際に、会社が管理する書類を回収
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-6">
+                    <p class="leading-relaxed">
+                      期間固定:
+                      <span class="text-red-500 font-bold">1件</span>
+                    </p>
+                    <span class="text-gray-400 leading-relaxed">4時間前</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="入社書類回収"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    【入事】入社書類回収
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    新入社員が入社する際に、会社が管理する書類を回収
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-6">
+                    <p class="leading-relaxed">
+                      期間固定:
+                      <span class="text-red-500 font-bold">1件</span>
+                    </p>
+                    <span class="text-gray-400 leading-relaxed">4時間前</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="事業再構築補助金"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    事業再構築補助金
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] w-full leading-relaxed text-center"
+                  >
+                    2025年度 適任者90%
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-6">
+                    <p class="leading-relaxed">期間固定: <span class="font-bold">0件</span></p>
+                    <span class="text-gray-400 leading-relaxed">1日前</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="ピザ市用サンプル"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    ピザ市用サンプル
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    2026年度　図説検討外国人向け
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-2">
+                    <p>期間固定: <span class="font-bold">0件</span></p>
+                    <span class="text-gray-400">2026/02/02</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="ものづくり補助金"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    ものづくり補助金
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    2025年度 適任者70%
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-2">
+                    <p>期間固定: <span class="font-bold">0件</span></p>
+                    <span class="text-gray-400">2025/12/30</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="業務改善助成金"
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    業務改善助成金
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    テスト用
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-2">
+                    <p>期間固定: <span class="font-bold">0件</span></p>
+                    <span class="text-gray-400">2025/12/28</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="max-w-[254px] bg-white rounded-[12px] w-full h-auto relative pt-12 pb-8 px-8 mx-auto sm:mx-0 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col h-full items-center justify-between">
+                <div class="flex flex-col items-center w-full">
+                  <img
+                    src="./img/avatar.png"
+                    alt="省エネ診断・非化石燃..."
+                    class="w-[80px] h-[80px] rounded-full absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-white z-10"
+                  />
+                  <h3 class="text-[18px] font-bold line-clamp-1 mb-3 text-[#2e3a3c] text-center">
+                    省エネ診断・非化石燃...
+                  </h3>
+                  <p
+                    class="text-[14px] mb-4 text-[#2e3a3c] line-clamp-3 min-h-[40px] leading-relaxed text-center"
+                  >
+                    炭度市記応化補助金をここで一緒に対応
+                  </p>
+                  <div class="flex items-center justify-between w-full gap-2 text-[14px] mb-2">
+                    <p>期間固定: <span class="font-bold">0件</span></p>
+                    <span class="text-gray-400">2025/12/20</span>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    class="w-[74px] h-[40px] border border-gray-300 rounded-full text-[14px] hover:bg-gray-50 text-[#2e3a3c]"
+                  >
+                    詳細
+                  </button>
+                  <button
+                    class="w-[132px] h-[40px] rounded-full text-white text-[14px] hover:bg-gray-700"
+                    style="background-color: #2e3a3c"
+                  >
+                    管理画面
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-white w-full px-4 py-8 md:pb-0 overflow-x-hidden">
+        <div
+          class="mx-auto grid w-full grid-cols-1 gap-6 lg:grid-cols-[528px_528px] lg:justify-center"
+        >
+          <div
+            class="w-full h-auto sm:max-h-[117px] rounded-xl p-6 md:p-8 flex items-center justify-between gap-6 hover:shadow-lg transition-shadow"
+            style="background-color: #39566f"
+          >
+            <div class="flex items-center gap-4 flex-1 min-w-0">
+              <img
+                src="./img/setting.png"
+                alt="Settings"
+                class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0"
+              />
+              <div class="text-white min-w-0">
+                <h3 class="text-[20px] md:text-[24px] font-extrabold mb-2 leading-tight">
+                  認証設定
+                </h3>
+                <p class="text-[13px] md:text-[15px] leading-relaxed">
+                  Googleなどの外部システムと連携し、より便利にオクトンを使うことができます。
+                </p>
+              </div>
+            </div>
+            <img
+              src="./img/right-arrow.svg"
+              alt="Arrow"
+              class="w-7 h-7 md:w-8 md:h-8 flex-shrink-0 hover:scale-110 transition-transform cursor-pointer"
+            />
+          </div>
+
+          <div
+            class="w-full h-auto sm:max-h-[117px] rounded-xl p-6 md:p-8 flex items-center justify-between gap-6 hover:shadow-lg transition-shadow"
+            style="background-color: #1a92f7"
+          >
+            <div class="flex items-center gap-4 flex-1 min-w-0">
+              <img
+                src="./img/holic.png"
+                alt="Holic"
+                class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0"
+              />
+              <div class="text-white min-w-0">
+                <h3 class="text-[20px] md:text-[24px] font-extrabold mb-2 leading-tight">
+                  オクトンの使い方のコツ
+                </h3>
+                <p class="text-[13px] md:text-[15px] leading-relaxed">
+                  書類回収をスムーズに進めるためのオクトン活用のコツをまとめました。
+                </p>
+              </div>
+            </div>
+            <img
+              src="./img/right-arrow.svg"
+              alt="Arrow"
+              class="w-7 h-7 md:w-8 md:h-8 flex-shrink-0 hover:scale-110 transition-transform cursor-pointer"
+            />
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div
+          class="flex flex-col items-center justify-center gap-4 max-w-6xl mx-auto w-full py-6 md:py-8 px-4 md:px-6"
+        >
+          <div
+            class="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-[13px] md:text-[14px] text-[#2e3a3c]"
+          >
+            <a href="#" class="hover:text-blue-600 transition-colors font-medium"
+              >はじめての使い方</a
+            >
+            <span class="text-gray-300">/</span>
+            <a href="#" class="hover:text-blue-600 transition-colors font-medium">よくある質問</a>
+            <span class="text-gray-300">/</span>
+            <a href="#" class="hover:text-blue-600 transition-colors font-medium">お問い合わせ</a>
+            <span class="text-gray-300">/</span>
+            <a href="#" class="hover:text-blue-600 transition-colors font-medium"
+              >プライバシーポリシー</a
+            >
+          </div>
+          <p class="text-[11px] md:text-[12px] text-gray-500">© オクトン All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
